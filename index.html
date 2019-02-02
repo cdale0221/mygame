@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<head>
+<meta charset="UTF-8"/>
+<title>diablo Game</title>
+<script language="javascript" type="text/javascript">
+var experience = 0;
+var gil = 0;
+
+function go(_s){
+return document.getElementById(_s);
+}
+function game_clicked(_letter){
+go('txtOut').value += _letter;
+}
+function btnPlay_clicked(){
+var out='<button>kill monster any way, shape, or how</button>' + "\n";
+out+='<button>kill player any way, shape, or how</button>';
+go('divGame').innerHTML = out;
+}
+function body_loaded(){
+
+}
+</script>
+<style type="text/css">
+#divGame{margin:5px;white-space:pre-line}
+</style>
+</head>
+
+
+<body onload="body_loaded()">
+<div id="divGame"><input type="button" value="download and install and play game" onclick="btnPlay_clicked()" />
+</div>
+</body>
+</html>
